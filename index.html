@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating Card</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img src="./images/icon-star.svg" alt="star" class="icon" />
+        <h2 class="heading">How did we do ?</h2>
+        <p class="para">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratings-wrapper">
+          <div class="rating" data-val="1">1</div>
+          <div class="rating" data-val="2">2</div>
+          <div class="rating" data-val="3">3</div>
+          <div class="rating" data-val="4">4</div>
+          <div class="rating" data-val="5">5</div>
+        </div>
+      </div>
+      <span class="btn">SUBMIT</span>
+    </div>
+
+    <div class="thankyou-card hide">
+      <img
+        src="./images/illustration-thank-you.svg"
+        alt="thankyou"
+        class="image"
+      />
+      <p class="rating-text">
+        You selected <span class="ratingtext"></span> out of 5.
+      </p>
+      <h1 class="heading2">Thank you!</h1>
+      <p class="thankyou-text">
+        We appreciate you taking time to give a rating. If you ever need more
+        support,don't hesitate to get in touch!
+      </p>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

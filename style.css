@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+body {
+  font-family: Overpass, sans-serif;
+  background: var(--VeryDarkBlue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.wrapper {
+  padding: 2em 2em;
+  background: var(--DarkBlue);
+  /* width: 90%; */
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+.icon {
+  margin-bottom: 1em;
+  background-color: hsl(213, 19%, 22%);
+  padding: 0.9rem;
+  border-radius: 80px;
+}
+
+.heading {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.para {
+  font-size: 15px;
+  color: var(--LightGrey);
+}
+
+.ratings-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 1em; */
+  padding: 2rem 0;
+}
+
+.rating {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: hsl(213, 19%, 22%);
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--MediumGrey);
+  border: 1px solid var(--DarkBlue);
+  border-radius: 60px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.rating:hover {
+  color: var(--White);
+  background-color: var(--Orange);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: var(--Orange);
+  color: var(--White);
+  padding: 0.7rem 8rem;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px hsl(213, 19%, 18%);
+  transition: ease 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.thankyou-card {
+  margin-top: 10em;
+  padding: 2em 2em;
+  background: var(--DarkBlue);
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+.image {
+  /* margin-left: 4em; */
+  margin: 1em 5em;
+}
+
+.rating-text {
+  font-size: 15px;
+  color: var(--Orange);
+  text-align: center;
+  background: hsl(213, 19%, 22%);
+  border-radius: 30px;
+  padding: 0.3rem 0rem;
+  margin: 0px 4rem;
+}
+
+.heading2 {
+  font-weight: 700;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.thankyou-text {
+  font-size: 16px;
+  color: var(--LightGrey);
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.hide {
+  display: none;
+}
